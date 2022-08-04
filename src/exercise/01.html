@@ -6,15 +6,14 @@
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/HTML/Element/script#attributes -->
 <!--   📜 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Guide/Modules -->
 <!--   📜 https://github.com/mdn/js-examples/tree/master/module-examples -->
-<body id="app">
+<body>
     <script type="module">
         const rootElement = document.createElement('div');
-        rootElement.id = 'root';
-        document.getElementById('app').append(rootElement);
+        document.body.append(rootElement);
         const container = document.createElement('div');
-        div.textContent = 'Hello World';
-        div.className = 'container';
-        document.getElementById('root').append(container);
+        container.textContent = 'Hello World';
+        container.className = 'container';
+        rootElement.append(container);
     </script>
 </body>
 
